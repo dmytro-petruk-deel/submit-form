@@ -1,45 +1,58 @@
 $susy: (
-  flow: ltr, // ltr | rtl
-  output: float, // float | isolate
-  math: fluid, // fluid | static (requires column-width)
-  container: 1180px, // length or % | auto
-  container-position: center, // left | center | right | <length> [*2] (grid padding)
-  last-flow: to,
-  columns: 12,
-  gutters: .1,
-  gutter-position: inside, // before | after | split | inside | inside-static (requires column-width)
-  global-box-sizing: content-box, // content-box | border-box (affects inside/inside-static)
-  debug: (
-    image: hide,
-    color: rgba(#54bcff, .5),
-    output: background,
-    toggle: bottom right,
-  ),
+        flow: ltr, // ltr | rtl
+        output: float, // float | isolate
+        math: fluid, // fluid | static (requires column-width)
+        container: 1180px, // length or % | auto
+        container-position: center, // left | center | right | <length> [*2] (grid padding)
+        last-flow: to,
+        columns: 12,
+        gutters: .1,
+        gutter-position: inside, // before | after | split | inside | inside-static (requires column-width)
+        global-box-sizing: content-box, // content-box | border-box (affects inside/inside-static)
+        debug: (
+                image: hide,
+                color: rgba(#54bcff, .5),
+                output: background,
+                toggle: bottom right,
+        ),
 );
 
 html, body {
-  height: 100%;
   font-size: 14px;
 }
 
 body {
   font-family: $font;
+  background-color: $body-gray;
   -webkit-font-smoothing: antialiased;
-  transition: color .2s ease, background-color .2s ease;
+  color: $dark-blue;
 }
 
 //------------------------------------------------------------------------------
 // Site wrapper. min-height use to keep footer in the bottom of page.
 .wrapper {
   position: relative;
-  width: 100%;
   min-width: 320px;
-  min-height: 100%;
+  max-width: 730px;
+  margin: 0 auto;
   overflow: hidden;
+  padding: 15px 30px;
+  width: 100%;
 }
 
 //------------------------------------------------------------------------------
 // .max-width is define maximum width for content.
 .max-width {
   @include container;
+}
+
+//------------------------------------------------------------------------------
+// Main content styles.
+.content {
+  background-color: $light-gray;
+  padding: 20px;
+  border-radius: 0 0 5px 5px;
+  border-width: 0 1px 1px 1px;
+  border-style: solid;
+  border-color: $light-yellow;
 }

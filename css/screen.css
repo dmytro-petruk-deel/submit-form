@@ -1,0 +1,205 @@
+@import url("https://fonts.googleapis.com/css?family=Alegreya+Sans");
+.clearfix:after, .header:after, .submit-form:after {
+  clear: both;
+  content: '';
+  display: block;
+  font-size: 0;
+  height: 0;
+  line-height: 0;
+  visibility: hidden; }
+
+/**
+ * Eric Meyer's Reset CSS v2.0 (http://meyerweb.com/eric/tools/css/reset/)
+ * http://cssreset.com
+ */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, main {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+button,
+input[type='submit'] {
+  -moz-appearance: none;
+  -webkit-appearance: none; }
+  button:focus,
+  input[type='submit']:focus {
+    outline: none; }
+
+select::-ms-expand {
+  display: none; }
+
+input::-ms-clear {
+  display: none; }
+
+html * {
+  box-sizing: border-box; }
+
+img {
+  height: auto;
+  max-width: 100%; }
+
+input:-webkit-autofill {
+  -webkit-box-shadow: 0 0 0 1000px #fff inset; }
+
+hr {
+  border-bottom: 1px solid #DADADA;
+  border-top: 0 none;
+  margin-left: auto;
+  margin-right: auto; }
+
+.hidden {
+  display: none;
+  visibility: hidden; }
+
+/**
+ * Hide elements visually, but keep them available for screen-readers.
+ *
+ * Used for information required for screen-reader users to understand and use
+ * the site where visual display is undesirable. Information provided in this
+ * manner should be kept concise, to avoid unnecessary burden on the user.
+ * "!important" is used to prevent unintentional overrides.
+ */
+.element-invisible {
+  position: absolute !important;
+  clip: rect(1px 1px 1px 1px);
+  /* IE6, IE7 */
+  clip: rect(1px, 1px, 1px, 1px); }
+
+html, body {
+  font-size: 14px; }
+
+body {
+  font-family: "Alegria Sans", "Arial", "Helvetica", sans-serif;
+  background-color: #eeeeee;
+  -webkit-font-smoothing: antialiased;
+  color: #0A2240; }
+
+.wrapper {
+  position: relative;
+  min-width: 320px;
+  max-width: 730px;
+  margin: 0 auto;
+  overflow: hidden;
+  padding: 15px 30px;
+  width: 100%; }
+
+.max-width {
+  max-width: 1180px;
+  margin-left: auto;
+  margin-right: auto; }
+  .max-width:after {
+    content: " ";
+    display: block;
+    clear: both; }
+
+.content {
+  background-color: #F8F8F8;
+  padding: 20px;
+  border-radius: 0 0 5px 5px;
+  border-width: 0 1px 1px 1px;
+  border-style: solid;
+  border-color: #ECE4B7; }
+
+.header {
+  background-color: #fff;
+  border-radius: 5px 5px 0 0;
+  border-top: 5px solid #fed811;
+  border-bottom: 1px solid #ECE4B7;
+  font-size: 15px;
+  height: 60px;
+  padding: 18px 20px 17px;
+  width: 100%; }
+  .header .number {
+    float: left; }
+
+.main-title {
+  margin-left: 45px; }
+
+.form-text {
+  background-color: #fff;
+  border: 1px solid #ECE4B7;
+  font-family: "Alegria Sans", "Arial", "Helvetica", sans-serif;
+  font-size: 15px;
+  color: #0A2240;
+  border-radius: 5px;
+  height: 45px;
+  padding: 0 20px;
+  width: 100%; }
+
+.form-submit {
+  transition: background-color .25s ease, color .25s ease;
+  background-color: #fff;
+  cursor: pointer;
+  border: 1px solid #0A2240;
+  display: inline-block;
+  font-family: "Alegria Sans", "Arial", "Helvetica", sans-serif;
+  font-size: 15px;
+  color: #0A2240;
+  border-radius: 5px;
+  height: 45px;
+  padding: 0 20px; }
+  .form-submit:hover {
+    color: #fff;
+    background-color: #0A2240; }
+
+.form-item label {
+  font-weight: bold;
+  text-transform: uppercase;
+  display: inline-block;
+  margin-bottom: 12px; }
+
+.submit-form .field-type-textfield {
+  width: 100%; }
+
+.submit-form .form-actions {
+  margin-top: 25px; }
+
+@media (min-width: 768px) {
+  .submit-form .field-type-textfield {
+    float: left;
+    width: 303px;
+    margin-right: 25px; }
+  .submit-form .form-actions {
+    float: left; } }
+
+@media (min-width: 0) and (max-width: 420px) {
+  .submit-form .form-actions .form-submit {
+    width: 100%; } }

@@ -1,0 +1,19 @@
+.header {
+  @extend .clearfix;
+  background-color: $white;
+  border-radius: 5px 5px 0 0;
+  border-top: 5px solid $yellow;
+  border-bottom: 1px solid $light-yellow;
+  font-size: 15px;
+  height: 60px;
+  padding: 18px 20px 17px;
+  width: 100%;
+
+  .number {
+    float: left;
+  }
+}
+
+.main-title {
+  margin-left: 45px;
+}

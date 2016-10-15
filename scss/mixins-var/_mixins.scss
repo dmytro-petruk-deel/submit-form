@@ -161,7 +161,7 @@
 }
 
 // Clear float.
-@mixin clearfix() {
+.clearfix {
   &:after {
     clear: both;
     content: '';

@@ -1,0 +1,40 @@
+// ------------------------------------------
+// Global form elements.
+.form-text {
+  background-color: $white;
+  border: 1px solid $light-yellow;
+  font-family: $font;
+  font-size: 15px;
+  color: $dark-blue;
+  border-radius: 5px;
+  height: 45px;
+  padding: 0 20px;
+  width: 100%;
+}
+
+// Submit button.
+.form-submit {
+  transition: background-color .25s ease, color .25s ease;
+  background-color: $white;
+  cursor: pointer;
+  border: 1px solid $dark-blue;
+  display: inline-block;
+  font-family: $font;
+  font-size: 15px;
+  color: $dark-blue;
+  border-radius: 5px;
+  height: 45px;
+  padding: 0 20px;
+
+  &:hover {
+    color: $white;
+    background-color: $dark-blue;
+  }
+}
+
+.form-item label {
+  font-weight: bold;
+  text-transform: uppercase;
+  display: inline-block;
+  margin-bottom: 12px;
+}

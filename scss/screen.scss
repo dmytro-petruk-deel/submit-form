@@ -7,6 +7,10 @@
 @import '../bower_components/susy/sass/susy';
 
 //------------------------------------------------------------------------------
+// Fonts
+@import url('https://fonts.googleapis.com/css?family=Alegreya+Sans');
+
+//------------------------------------------------------------------------------
 // Mixins & variables
 @import 'mixins-var/variables';
 @import 'mixins-var/mixins';
@@ -20,4 +24,6 @@
 //------------------------------------------------------------------------------
 // Elements.
 @import 'elements/common';
-
+@import 'elements/header';
+@import 'elements/forms';
+@import 'elements/submit-form';

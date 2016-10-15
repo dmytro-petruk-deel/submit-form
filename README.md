@@ -1,5 +1,5 @@
-# Reactjs with Babel kickstart
-Package to quick start projects with ReactJS.
+# Submit user name form.
+Form to submit data with ReactJS.
 
 ## Install modules
 
@@ -12,3 +12,7 @@ Make sure that you have installed babel and webpack globally.
 ## Run command
 
 * `npm run start`
+
+or
+
+* `npm start`

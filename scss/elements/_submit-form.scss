@@ -1,0 +1,29 @@
+.submit-form {
+  @extend .clearfix;
+
+  .field-type-textfield {
+    width: 100%;
+  }
+
+  .form-actions {
+    margin-top: 25px;
+  }
+
+  @include susy-breakpoint($tablet) {
+    .field-type-textfield {
+      float: left;
+      width: 303px;
+      margin-right: 25px;
+    }
+
+    .form-actions {
+      float: left;
+    }
+  }
+
+  @include susy-breakpoint(0 $mobile) {
+    .form-actions .form-submit {
+      width: 100%;
+    }
+  }
+}

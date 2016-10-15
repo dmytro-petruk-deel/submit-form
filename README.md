@@ -16,3 +16,7 @@ Make sure that you have installed babel and webpack globally.
 or
 
 * `npm start`
+
+## Server 
+
+* `http://localhost:7777`
